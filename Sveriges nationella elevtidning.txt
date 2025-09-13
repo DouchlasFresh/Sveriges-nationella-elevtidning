@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sveriges Skoltidning - Nationell plattform för elevtexter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .headline-font {
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #005792 0%, #00204a 100%);
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link:hover {
+            color: #005792;
+            border-bottom: 2px solid #005792;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-bold text-blue-900 headline-font">Sveriges Skoltidning</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="nav-link py-2 px-1 text-gray-700 font-medium transition duration-300">Start</a>
+                    <a href="#" class="nav-link py-2 px-1 text-gray-700 font-medium transition duration-300">Kategorier</a>
+                    <a href="#" class="nav-link py-2 px-1 text-gray-700 font-medium transition duration-300">Om oss</a>
+                    <a href="#" class="nav-link py-2 px-1 text-gray-700 font-medium transition duration-300">Skicka in</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden text-gray-700">
+                    <i data-feather="menu"></i>
+                </button>
+                <a href="#" class="hidden md:block bg-blue-900 hover:bg-blue-800 text-white px-4 py-2 rounded font-medium transition duration-300">Logga in</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-20 md:py-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 headline-font" data-aos="fade-up">Sveriges elevröster samlas här</h1>
+                <p class="text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">En nationell plattform där elever från hela landet kan dela sina tankar, idéer och reportage.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded font-medium transition duration-300">Skicka in din text</a>
+                    <a href="#" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded font-medium transition duration-300">Läs senaste texterna</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Articles -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 headline-font" data-aos="fade-up">Utvalda texter</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up">
+                    <img src="http://static.photos/education/1024x576/1" alt="Article image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-900 font-medium">Debattartikel</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800 headline-font">Digitalisering i skolan - framtid eller fallgropar?</h3>
+                        <p class="text-gray-600 mb-4">En djupdykning i hur digitala verktyg påverkar vår inlärning och sociala interaktioner i skolan.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>Emma L, Stockholm</span>
+                            <span class="mx-2">•</span>
+                            <span>2 dagar sedan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/science/1024x576/2" alt="Article image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-medium">Naturvetenskap</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800 headline-font">Klimatförändringarnas påverkan på svenska ekosystem</h3>
+                        <p class="text-gray-600 mb-4">En vetenskaplig analys av hur vårt lokala väder och natur förändras och vad vi kan göra åt det.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>Oscar K, Göteborg</span>
+                            <span class="mx-2">•</span>
+                            <span>1 vecka sedan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/people/1024x576/3" alt="Article image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-purple-600 font-medium">Reportage</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800 headline-font">Ungdomars mentala hälsa under press</h3>
+                        <p class="text-gray-600 mb-4">En granskning av hur skolans krav och sociala medier påverkar dagens ungdomar.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>Sara M, Malmö</span>
+                            <span class="mx-2">•</span>
+                            <span>3 dagar sedan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#" class="inline-block border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-6 py-3 rounded font-medium transition duration-300">Se fler texter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 headline-font" data-aos="fade-up">Våra kategorier</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="edit-3" class="text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Insändare</h3>
+                    <p class="text-gray-600">Dela din åsikt om aktuella frågor som rör skolan och samhället.</p>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="zap" class="text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Debattartiklar</h3>
+                    <p class="text-gray-600">Argumenterade texter där du tar ställning i viktiga frågor.</p>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="book-open" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Essäer</h3>
+                    <p class="text-gray-600">Personliga och reflekterande texter om olika ämnen.</p>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="search" class="text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Reportage</h3>
+                    <p class="text-gray-600">Djupdykningar och undersökande texter om aktuella fenomen.</p>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="pen-tool" class="text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Krönikor</h3>
+                    <p class="text-gray-600">Personliga skildringar och kommentarer om vardagslivet.</p>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="globe" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Samhällsvetenskap</h3>
+                    <p class="text-gray-600">Faktatexter om ekonomi, politik, psykologi och sociologi.</p>
+                </div>
+                
+                <!-- Category 7 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="atom" class="text-teal-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Naturvetenskap</h3>
+                    <p class="text-gray-600">Fakta och forskning inom biologi, fysik, kemi och geovetenskap.</p>
+                </div>
+                
+                <!-- Category 8 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="book" class="text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Humaniora</h3>
+                    <p class="text-gray-600">Texter om filosofi, historia, litteratur, språk och kultur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 headline-font" data-aos="fade-up">Så fungerar det</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center" data-aos="fade-up">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-blue-900">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Skriv din text</h3>
+                    <p class="text-gray-600">Välj en kategori och skriv din artikel, essä, debattinlägg eller faktatext.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-blue-900">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Skicka in</h3>
+                    <p class="text-gray-600">Ladda upp din text genom vårt enkla formulär. Glöm inte att lägga till din skola!</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-blue-900">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Publiceras</h3>
+                    <p class="text-gray-600">Vår redaktion granskar din text och publicerar den för elever i hela Sverige att läsa.</p>
+                </div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto mt-12 bg-blue-50 rounded-lg p-8 text-center" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-4 text-blue-900 headline-font">Redo att dela din text?</h3>
+                <p class="text-gray-700 mb-6">Alla elever i Sverige är välkomna att skicka in sina texter. Vi publicerar regelbundet texter inom alla kategorier.</p>
+                <a href="#" class="inline-block bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded font-medium transition duration-300">Skicka in nu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 headline-font">Sveriges Skoltidning</h3>
+                    <p class="text-gray-400 mb-4">En plattform för elever i hela Sverige att dela sina tankar och idéer.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kategorier</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Insändare</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Debattartiklar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Essäer</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Reportage</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Faktatexter</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Samhällsvetenskap</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Naturvetenskap</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Humaniora</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Krönikor</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontakt</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="mail" class="mr-2"></i>
+                            <span>info@skoltidning.se</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="phone" class="mr-2"></i>
+                            <span>08-123 45 67</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Stockholm, Sverige</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">© 2023 Sveriges Skoltidning. Alla rättigheter reserverade.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition duration-300">Integritetspolicy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition duration-300">Användarvillkor</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition duration-300">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const menu = document.querySelector('.hidden.md\\:flex.space-x-6');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('shadow-md');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-0');
+        });
+    </script>
+</body>
+</html>
